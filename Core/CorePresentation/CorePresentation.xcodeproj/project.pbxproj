@@ -10,6 +10,8 @@
 		0BD12B342E7842A1009F7599 /* CorePresentation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BD12B282E7842A1009F7599 /* CorePresentation.framework */; };
 		0BD12CB22E78462D009F7599 /* CoreDomain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BD12CB12E78462D009F7599 /* CoreDomain.framework */; };
 		0BD12CB32E78462D009F7599 /* CoreDomain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0BD12CB12E78462D009F7599 /* CoreDomain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0BD12F352E785051009F7599 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BD12F342E785051009F7599 /* CoreData.framework */; };
+		0BD12F362E785051009F7599 /* CoreData.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0BD12F342E785051009F7599 /* CoreData.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +32,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				0BD12CB32E78462D009F7599 /* CoreDomain.framework in Embed Frameworks */,
+				0BD12F362E785051009F7599 /* CoreData.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -40,6 +43,7 @@
 		0BD12B282E7842A1009F7599 /* CorePresentation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CorePresentation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BD12B332E7842A1009F7599 /* CorePresentationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CorePresentationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BD12CB12E78462D009F7599 /* CoreDomain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CoreDomain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0BD12F342E785051009F7599 /* CoreData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CoreData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -61,6 +65,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0BD12CB22E78462D009F7599 /* CoreDomain.framework in Frameworks */,
+				0BD12F352E785051009F7599 /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,6 +102,7 @@
 		0BD12CB02E78462D009F7599 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0BD12F342E785051009F7599 /* CoreData.framework */,
 				0BD12CB12E78462D009F7599 /* CoreDomain.framework */,
 			);
 			name = Frameworks;

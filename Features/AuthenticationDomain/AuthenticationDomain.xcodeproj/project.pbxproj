@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0BD12BF12E78449D009F7599 /* AuthenticationDomain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BD12BE52E78449D009F7599 /* AuthenticationDomain.framework */; };
+		0BD12EBC2E784F1D009F7599 /* CoreDomain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BD12EBB2E784F1D009F7599 /* CoreDomain.framework */; };
+		0BD12EBD2E784F1D009F7599 /* CoreDomain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0BD12EBB2E784F1D009F7599 /* CoreDomain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -20,9 +22,24 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		0BD12EBE2E784F1D009F7599 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				0BD12EBD2E784F1D009F7599 /* CoreDomain.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		0BD12BE52E78449D009F7599 /* AuthenticationDomain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AuthenticationDomain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BD12BF02E78449D009F7599 /* AuthenticationDomainTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AuthenticationDomainTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0BD12EBB2E784F1D009F7599 /* CoreDomain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CoreDomain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -43,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BD12EBC2E784F1D009F7599 /* CoreDomain.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +80,7 @@
 			children = (
 				0BD12BE72E78449D009F7599 /* AuthenticationDomain */,
 				0BD12BF42E78449D009F7599 /* AuthenticationDomainTests */,
+				0BD12EBA2E784F1D009F7599 /* Frameworks */,
 				0BD12BE62E78449D009F7599 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -73,6 +92,14 @@
 				0BD12BF02E78449D009F7599 /* AuthenticationDomainTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		0BD12EBA2E784F1D009F7599 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0BD12EBB2E784F1D009F7599 /* CoreDomain.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +123,7 @@
 				0BD12BE12E78449D009F7599 /* Sources */,
 				0BD12BE22E78449D009F7599 /* Frameworks */,
 				0BD12BE32E78449D009F7599 /* Resources */,
+				0BD12EBE2E784F1D009F7599 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
