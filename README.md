@@ -7,7 +7,14 @@ Project bao gồm nhiều module tách biệt theo domain (Core, Features) và �
 
 ---
 
+
+## 🔑 Tài khoản demo
+
+Email: test@example.com
+Password: password
+
 ## 📸 Demo
+
 1. Login screen:
 
 <img src="demo-images/1.png" width="300" />
