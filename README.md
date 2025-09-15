@@ -9,9 +9,10 @@ Project bao gồm nhiều module tách biệt theo domain (Core, Features) và �
 
 
 ## 🔑 Tài khoản demo
-
+```bash
 Email: test@example.com
 Password: password
+```
 
 ## 📸 Demo
 
