@@ -9,9 +9,9 @@ Project bao gồm nhiều module tách biệt theo domain (Core, Features) và �
 
 ## 📸 Demo
 
-![Demo 1](demo-images/1.png)
-![Demo 2](demo-images/2.png)
-![Demo 3](demo-images/3.png)
+<img src="demo-images/1.png" width="300" />
+<img src="demo-images/2.png" width="300" />
+<img src="demo-images/3.png" width="300" />
 
 ## 📂 Cấu trúc thư mục
 
