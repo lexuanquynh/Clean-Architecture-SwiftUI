@@ -1,0 +1,20 @@
+load("@rules_swift//swift:swift.bzl", "swift_library")
+
+swift_library(
+    name = "HomeFeed",
+    module_name = "HomeFeed",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//Features/HomeFeed/Domain:HomeFeedDomain",
+        "//Features/HomeFeed/Data:HomeFeedData",
+        "//Features/HomeFeed/Presentation:HomeFeedPresentation",
+        # HomeFeed depends on Authentication for session management
+        "//Core/Data:CoreData",
+    ],
+    # Re-export all sub-modules
+    exported_deps = [
+        "//Features/HomeFeed/Domain:HomeFeedDomain",
+        "//Features/HomeFeed/Data:HomeFeedData",
+        "//Features/HomeFeed/Presentation:HomeFeedPresentation",
+    ],
+)

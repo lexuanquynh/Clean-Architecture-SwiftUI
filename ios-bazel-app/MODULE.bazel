@@ -1,0 +1,16 @@
+# MODULE.bazel
+module(
+    name = "ios_app",
+    version = "1.0.0",
+)
+
+# Latest versions compatible with Bazel 8.x (as of late 2024/early 2025)
+bazel_dep(name = "rules_apple", version = "4.2.0")      # Latest stable
+bazel_dep(name = "rules_swift", version = "3.1.2")       # Latest stable
+bazel_dep(name = "apple_support", version = "1.23.1")    # Latest
+bazel_dep(name = "bazel_skylib", version = "1.8.1")      # Update to match
+bazel_dep(name = "platforms", version = "1.0.0")        # Update to match
+bazel_dep(name = "rules_xcodeproj", version = "3.2.0")   # Latest
+
+# Additional dependency for Bazel 8.x
+bazel_dep(name = "rules_cc", version = "0.2.8")         # Required for Bazel 8

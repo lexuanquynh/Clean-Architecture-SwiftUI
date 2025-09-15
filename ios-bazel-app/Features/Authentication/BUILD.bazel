@@ -1,0 +1,18 @@
+load("@rules_swift//swift:swift.bzl", "swift_library")
+
+swift_library(
+    name = "Authentication",
+    module_name = "Authentication",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//Features/Authentication/Domain:AuthenticationDomain",
+        "//Features/Authentication/Data:AuthenticationData",
+        "//Features/Authentication/Presentation:AuthenticationPresentation",
+    ],
+    # Re-export all sub-modules
+    exported_deps = [
+        "//Features/Authentication/Domain:AuthenticationDomain",
+        "//Features/Authentication/Data:AuthenticationData",
+        "//Features/Authentication/Presentation:AuthenticationPresentation",
+    ],
+)

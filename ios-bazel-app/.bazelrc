@@ -1,0 +1,43 @@
+# .bazelrc
+common --enable_bzlmod
+
+# iOS build settings (common for all builds)
+build --apple_platform_type=ios
+build --incompatible_enable_cc_toolchain_resolution
+build --action_cache_store_output_metadata
+build --xcode_version=16.4
+
+# Fix for j2objc_dead_code_pruner issue in Bazel 8
+build --incompatible_j2objc_library_migration
+
+# Suppress version warnings
+common --check_direct_dependencies=off
+
+# ========== CONFIG DEFINITIONS ==========
+
+# Config for iOS Simulator
+build:simulator --ios_multi_cpus=sim_arm64,x86_64
+build:simulator --ios_simulator_device="iPhone 16 Pro"
+build:simulator --ios_simulator_version=18.0
+build:simulator --apple_platform_type=ios
+
+# Config for iOS Device
+build:device --ios_multi_cpus=arm64
+build:device --apple_platform_type=ios
+build:device --ios_signing_cert_name="Apple Development: Xuan Le (6K7Q35VNM2)"
+
+# Config for Debug builds
+build:debug --compilation_mode=dbg
+build:debug --spawn_strategy=local
+build:debug --objc_enable_binary_stripping=false
+
+# Config for Release builds
+build:release --compilation_mode=opt
+build:release --objc_enable_binary_stripping=true
+
+# Combine configs (optional)
+build:sim_debug --config=simulator
+build:sim_debug --config=debug
+
+build:sim_release --config=simulator
+build:sim_release --config=release

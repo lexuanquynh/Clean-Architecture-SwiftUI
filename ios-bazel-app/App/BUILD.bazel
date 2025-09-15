@@ -1,0 +1,27 @@
+load("@rules_swift//swift:swift.bzl", "swift_library")
+load("@rules_apple//apple:ios.bzl", "ios_application")
+
+swift_library(
+    name = "AppLib",
+    srcs = glob(["Sources/**/*.swift"]),
+    module_name = "App",
+    deps = [
+        # Core modules
+        "//Core/Domain:CoreDomain",
+        "//Core/Data:CoreData",
+        "//Core/Presentation:CorePresentation",
+        # Feature modules
+        "//Features/Authentication:Authentication",
+        "//Features/HomeFeed:HomeFeed",
+    ],
+)
+
+ios_application(
+    name = "App",
+    bundle_id = "com.example.bazelapp",
+    families = ["iphone", "ipad"],
+    infoplists = ["Info.plist"],
+    minimum_os_version = "16.0",
+    resources = glob(["Resources/**"]),
+    deps = [":AppLib"],
+)

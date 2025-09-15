@@ -1,0 +1,10 @@
+load("@rules_xcodeproj//xcodeproj:defs.bzl", "xcodeproj")
+
+xcodeproj(
+    name = "xcodeproj",
+    project_name = "BzlmodApp",
+    tags = ["manual"],
+    top_level_targets = [
+        "//App:App",
+    ],
+)

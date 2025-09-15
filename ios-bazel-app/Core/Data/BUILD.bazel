@@ -1,0 +1,11 @@
+load("@rules_swift//swift:swift.bzl", "swift_library")
+
+swift_library(
+    name = "CoreData",
+    srcs = glob(["Sources/**/*.swift"]),
+    module_name = "CoreData",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//Core/Domain:CoreDomain",
+    ],
+)
