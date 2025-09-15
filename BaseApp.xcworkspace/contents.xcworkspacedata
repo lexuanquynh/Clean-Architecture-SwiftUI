@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:BazelApp/BazelApp.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Features/AuthenticationPresentation/AuthenticationPresentation.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Features/HomeFeedPresentation/HomeFeedPresentation.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Features/HomeFeedData/HomeFeedData.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Features/HomeFeedDomain/HomeFeedDomain.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Features/Authentication/Authentication.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Features/AuthenticationData/AuthenticationData.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Features/AuthenticationDomain/AuthenticationDomain.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Core/CorePresentation/CorePresentation.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Core/CoreDomain/CoreDomain.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Core/CoreData/CoreData.xcodeproj">
+   </FileRef>
+</Workspace>
