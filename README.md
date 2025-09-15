@@ -8,9 +8,16 @@ Project bao gồm nhiều module tách biệt theo domain (Core, Features) và �
 ---
 
 ## 📸 Demo
+1. Login screen:
 
 <img src="demo-images/1.png" width="300" />
+
+2. Feed screen:
+
 <img src="demo-images/2.png" width="300" />
+
+3. Setting screen:
+
 <img src="demo-images/3.png" width="300" />
 
 ## 📂 Cấu trúc thư mục
