@@ -169,7 +169,7 @@ public class SessionManager: ObservableObject {
     public func saveUser(_ user: User) {
         currentUser = user
         isLoggedIn = true
-//        cacheManager.save(user, forKey: userKey)
+        cacheManager.save(user, forKey: userKey)
     }
     
     public func clearSession() {
@@ -179,9 +179,9 @@ public class SessionManager: ObservableObject {
     }
     
     private func loadUser() {
-//        if let user = cacheManager.load(User.self, forKey: userKey) {
-//            currentUser = user
-//            isLoggedIn = true
-//        }
+        if let user = cacheManager.load(User.self, forKey: userKey) {
+            currentUser = user
+            isLoggedIn = true
+        }
     }
 }

@@ -7,7 +7,7 @@ public protocol Entity {
 }
 
 // MARK: - User Entity
-public struct User: Entity {
+public struct User: Entity, Codable {
     public let id: String
     public let email: String
     public let name: String
